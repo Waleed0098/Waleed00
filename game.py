@@ -34,16 +34,16 @@ class RockPaperScissorsGame:
 
         if self.user_choice == self.computer_choice:
             self.result = "<span style='color: orange;'>It's a tie!</span>"
-            st.image("c:/Users/Waleed Abbasi/OneDrive/Desktop/python/images/tie.gif", use_container_width=True, width=500)
+            st.image("tie.png", caption="It's a tie!")
         elif (self.user_choice == "Rock" and self.computer_choice == "Scissors") or \
              (self.user_choice == "Paper" and self.computer_choice == "Rock") or \
              (self.user_choice == "Scissors" and self.computer_choice == "Paper"):
             self.result = "<span style='color: green;'>You win!</span>"
-            st.image("c:/Users/Waleed Abbasi/OneDrive/Desktop/python/images/you_win.gif", use_container_width=True, width=500)
+            st.image("you_win.png", caption="You win!")
             st.balloons()
         else:
             self.result = "<span style='color: red;'>You lose!</span>"
-            st.image("c:/Users/Waleed Abbasi/OneDrive/Desktop/python/images/you_lose.gif", use_container_width=True, width=500)
+            st.image("you_lose.png", caption="You lose!")
 
         st.markdown(f"<h2 style='text-align: center;'>{self.result}</h2>", unsafe_allow_html=True)
 
